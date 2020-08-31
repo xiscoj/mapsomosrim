@@ -1,0 +1,23 @@
+uuid: 70d9f999-ff92-4946-9099-ecd02bc8afe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.geolocation
+  module:
+    - facets
+  theme:
+    - map
+id: geolocation
+theme: map
+region: map
+weight: -6
+provider: null
+plugin: 'facet_block:geolocation'
+settings:
+  id: 'facet_block:geolocation'
+  label: Geolocation
+  provider: facets
+  label_display: '0'
+  block_id: geolocation
+visibility: {  }

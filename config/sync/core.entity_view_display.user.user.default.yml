@@ -1,0 +1,26 @@
+uuid: 3e4ff0bc-1384-412c-b1ac-bba043f84a20
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  extra_field_user_profile_compact: true
+  langcode: true
+  linked_username: true
+  my_services_entity_view_1: true
+  private_message_link: true
+  realname: true
+  search_api_excerpt: true

@@ -1,0 +1,24 @@
+uuid: ea13f04a-0c67-474e-b186-8baf19461fdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+  module:
+    - user
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content: {  }
+hidden:
+  extra_field_user_profile_compact: true
+  langcode: true
+  linked_username: true
+  member_for: true
+  my_services_entity_view_1: true
+  private_message_link: true
+  realname: true
+  search_api_excerpt: true

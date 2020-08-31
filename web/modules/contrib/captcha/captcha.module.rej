@@ -1,0 +1,15 @@
+--- captcha.module
++++ captcha.module
+@@ -110,10 +110,10 @@ function captcha_cron() {
+   // Get request time.
+   $request_time = \Drupal::time()->getRequestTime();
+ 
+-  // Remove challenges older than 1 day.
++  // Remove challenges older than PHP's session.gc_maxlifetime value.
+   $connection = Database::getConnection();
+   $connection->delete('captcha_sessions')
+-    ->condition('timestamp', $request_time - 60 * 60 * 24, '<')
++    ->condition('timestamp', $request_time - ini_get('session.gc_maxlifetime'), '<')
+     ->execute();
+ }
+ 

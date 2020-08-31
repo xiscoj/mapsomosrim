@@ -1,0 +1,23 @@
+uuid: f4a38c57-ec85-45ba-8f73-b43c1e136b6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_link
+    - node.type.group
+  module:
+    - link
+id: node.group.field_group_link
+field_name: field_group_link
+entity_type: node
+bundle: group
+label: 'Link to Group'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

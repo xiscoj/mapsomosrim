@@ -1,0 +1,1373 @@
+@charset "UTF-8";
+/* Media Querys */
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello/font/fontello.eot?8547953483");
+  src: url("../fonts/fontello/font/fontello.eot?8547953483#iefix") format("embedded-opentype"), url("../fonts/fontello/font/fontello.woff2?8547953483") format("woff2"), url("../fonts/fontello/font/fontello.woff?8547953483") format("woff"), url("../fonts/fontello/font/fontello.ttf?8547953483") format("truetype"), url("../fonts/fontello/font/fontello.svg?8547953483#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "fontello";
+    src: url("../fonts/fontello/font/fontello.svg?85479583#fontello") format("svg");
+  }
+}
+form .field-group-tab.form-wrapper > .details-wrapper {
+  padding: 20px;
+}
+form .field-group-tab.form-wrapper > summary {
+  padding: 10px;
+}
+form #edit-timezone {
+  padding: 0;
+}
+form #edit-timezone summary {
+  display: none;
+}
+form select.form-select {
+  max-width: 100%;
+  min-width: 100px;
+}
+form .field--type-language-field .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+form .field--type-language-field .draggable .field-multiple-drag {
+  display: none;
+}
+form .captcha {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.popup-entity-popup {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+.popup-entity-popup ul {
+  padding-left: 15px;
+}
+
+.node--type-page.node--view-mode-full {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 960px;
+  padding: 30px 0;
+}
+
+.node--type-group.node--view-mode-full {
+  margin-top: 40px;
+}
+.node--type-group.node--view-mode-full .group-left {
+  float: left;
+  padding: 0 20px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .node--type-group.node--view-mode-full .group-left {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .node--type-group.node--view-mode-full .group-left {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .node--type-group.node--view-mode-full .group-left {
+    width: 25%;
+  }
+}
+.node--type-group.node--view-mode-full .group-center {
+  float: left;
+  padding: 0 20px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .node--type-group.node--view-mode-full .group-center {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .node--type-group.node--view-mode-full .group-center {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .node--type-group.node--view-mode-full .group-center {
+    width: 75%;
+  }
+}
+.node--type-group.node--view-mode-full .field__label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.node--type-group.node--view-mode-full .field {
+  margin-bottom: 15px;
+}
+.node--type-group.node--view-mode-full .field--type-entity-reference .field__items .field__item {
+  display: inline-block;
+}
+.node--type-group.node--view-mode-full .field--type-entity-reference .field__items .field__item:after {
+  content: ", ";
+}
+.node--type-group.node--view-mode-full .field--type-entity-reference .field__items .field__item:last-child:after {
+  display: none;
+}
+.node--type-group.node--view-mode-full .field--name-field-group-link {
+  margin-bottom: 45px;
+}
+.node--type-group.node--view-mode-full .field--name-field-group-link a {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 13px 24px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid #b8b8b8;
+  margin-left: 0;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  padding: 13px 24px;
+  background-color: #7cbc48;
+  border-color: #7cbc48;
+  color: #fff;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+.node--type-group.node--view-mode-full .field--name-field-group-link a:hover, .node--type-group.node--view-mode-full .field--name-field-group-link a:focus, .node--type-group.node--view-mode-full .field--name-field-group-link a.is-active {
+  background-color: white;
+  border-color: #0678be;
+  color: #0678be;
+  text-decoration: none;
+  outline: transparent;
+}
+.node--type-group.node--view-mode-full .field--name-field-group-link a:hover, .node--type-group.node--view-mode-full .field--name-field-group-link a:focus, .node--type-group.node--view-mode-full .field--name-field-group-link a.is-active {
+  background-color: #6aab35;
+  border-color: #6aab35;
+  color: #fff;
+}
+.node--type-group.node--view-mode-teaser {
+  text-align: center;
+  width: 100%;
+  padding: 20px 10%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  transition: box-shadow 0.25s;
+}
+.node--type-group.node--view-mode-teaser a {
+  color: #222;
+  text-decoration: none;
+}
+.node--type-group.node--view-mode-teaser h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.node--type-group.node--view-mode-teaser div.lat, .node--type-group.node--view-mode-teaser div.lng {
+  display: none;
+}
+.node--type-group.node--view-mode-teaser:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+}
+.node--type-group.node--view-mode-teaser:hover .view-more {
+  background-color: #387a99;
+}
+
+article.profile .field--name-user-picture img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+article.profile .field--type-language-field .field__item {
+  display: inline-block;
+}
+article.profile .field--type-language-field .field__item p {
+  display: inline-block;
+  margin: 0;
+}
+article.profile .field--type-language-field .field__item:after {
+  content: ", ";
+}
+article.profile .field--type-language-field .field__item:last-child:after {
+  display: none;
+}
+article.profile.profile--view-mode-compact {
+  text-align: center;
+  margin-bottom: 30px;
+}
+article.profile.profile--view-mode-compact .group_content {
+  display: inline-block;
+  vertical-align: middle;
+}
+article.profile.profile--view-mode-compact .group_content .group_content_header .field, article.profile.profile--view-mode-compact .group_content .group_content_header .form-item, article.profile.profile--view-mode-compact .group_content .group_content_middle .field, article.profile.profile--view-mode-compact .group_content .group_content_middle .form-item, article.profile.profile--view-mode-compact .group_content .group_content_bottom .field, article.profile.profile--view-mode-compact .group_content .group_content_bottom .form-item {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+article.profile.profile--view-mode-compact .group_content .group_content_header .form-item h4, article.profile.profile--view-mode-compact .group_content .group_content_middle .form-item h4, article.profile.profile--view-mode-compact .group_content .group_content_bottom .form-item h4 {
+  font-weight: normal;
+  display: inline-block;
+}
+article.profile.profile--view-mode-compact .group_content .group_content_header {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.2em;
+}
+article.profile.profile--view-mode-compact .group_content .group_content_header .field {
+  margin-right: 6px;
+}
+article.profile.profile--view-mode-compact .field--name-user-picture {
+  width: 25%;
+  min-width: 150px;
+  max-width: 250px;
+  margin-right: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+article.profile.profile--view-mode-teaser .field--name-user-picture {
+  width: 25%;
+  max-width: 250px;
+  margin-right: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+article.profile.profile--view-mode-teaser .field--name-field-name {
+  display: inline-block;
+  font-size: 1.5em;
+}
+article.profile.profile--view-mode-full {
+  margin-top: 40px;
+}
+article.profile.profile--view-mode-full > .left {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -4px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  article.profile.profile--view-mode-full > .left {
+    width: 66%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  article.profile.profile--view-mode-full > .left {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  article.profile.profile--view-mode-full > .left {
+    width: 75%;
+  }
+}
+article.profile.profile--view-mode-full > .left .field--name-user-picture {
+  max-width: 300px;
+}
+article.profile.profile--view-mode-full > .right {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  article.profile.profile--view-mode-full > .right {
+    width: 33%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  article.profile.profile--view-mode-full > .right {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  article.profile.profile--view-mode-full > .right {
+    width: 25%;
+  }
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.region-map {
+  position: relative;
+}
+
+#progress {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6px;
+  margin: 0;
+}
+
+#progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #455566;
+}
+
+.facets-map {
+  height: 100vh;
+}
+
+.path-frontpage .content-header, .path-map .content-header, .path-groups .content-header, .path-prints .content-header {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: visible;
+}
+
+#sidebar-map-results .sidebar-btn {
+  display: none;
+}
+#sidebar-map-results.active .sidebar-btn {
+  display: block;
+}
+#sidebar-map-results .view-content {
+  padding: 10px;
+}
+#sidebar-map-results .view-content .views-row {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.view-id-my_services > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.view-id-my_favorites .view-content > .views-row {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 -4px;
+  padding: 10px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .view-id-my_favorites .view-content > .views-row {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .view-id-my_favorites .view-content > .views-row {
+    width: 33%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .view-id-my_favorites .view-content > .views-row {
+    width: 25%;
+  }
+}
+
+.view-id-map .view-content.owl-carousel, .view-id-groups .view-content.owl-carousel, .view-id-prints .view-content.owl-carousel {
+  display: block;
+  padding: 5px 0;
+  position: relative;
+}
+.view-id-map .view-content.owl-carousel .views-infinite-scroll-content-wrapper > .views-row, .view-id-groups .view-content.owl-carousel .views-infinite-scroll-content-wrapper > .views-row, .view-id-prints .view-content.owl-carousel .views-infinite-scroll-content-wrapper > .views-row {
+  display: none;
+}
+.view-id-map .view-content.owl-carousel .owl-item, .view-id-groups .view-content.owl-carousel .owl-item, .view-id-prints .view-content.owl-carousel .owl-item {
+  padding: 5px;
+  opacity: 0.6;
+}
+.view-id-map .view-content.owl-carousel .owl-item.active, .view-id-groups .view-content.owl-carousel .owl-item.active, .view-id-prints .view-content.owl-carousel .owl-item.active {
+  opacity: 1;
+}
+.view-id-map .view-content.owl-carousel .owl-dots, .view-id-groups .view-content.owl-carousel .owl-dots, .view-id-prints .view-content.owl-carousel .owl-dots {
+  display: none;
+}
+.view-id-map .view-content.owl-carousel .owl-nav .owl-prev, .view-id-map .view-content.owl-carousel .owl-nav .owl-next, .view-id-groups .view-content.owl-carousel .owl-nav .owl-prev, .view-id-groups .view-content.owl-carousel .owl-nav .owl-next, .view-id-prints .view-content.owl-carousel .owl-nav .owl-prev, .view-id-prints .view-content.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+.view-id-map .view-content.owl-carousel .owl-nav .owl-prev.disabled, .view-id-map .view-content.owl-carousel .owl-nav .owl-next.disabled, .view-id-groups .view-content.owl-carousel .owl-nav .owl-prev.disabled, .view-id-groups .view-content.owl-carousel .owl-nav .owl-next.disabled, .view-id-prints .view-content.owl-carousel .owl-nav .owl-prev.disabled, .view-id-prints .view-content.owl-carousel .owl-nav .owl-next.disabled {
+  display: none;
+}
+.view-id-map .view-content.owl-carousel .owl-nav .owl-prev:hover, .view-id-map .view-content.owl-carousel .owl-nav .owl-next:hover, .view-id-groups .view-content.owl-carousel .owl-nav .owl-prev:hover, .view-id-groups .view-content.owl-carousel .owl-nav .owl-next:hover, .view-id-prints .view-content.owl-carousel .owl-nav .owl-prev:hover, .view-id-prints .view-content.owl-carousel .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+.view-id-map .view-content.owl-carousel .owl-nav .owl-prev span, .view-id-map .view-content.owl-carousel .owl-nav .owl-next span, .view-id-groups .view-content.owl-carousel .owl-nav .owl-prev span, .view-id-groups .view-content.owl-carousel .owl-nav .owl-next span, .view-id-prints .view-content.owl-carousel .owl-nav .owl-prev span, .view-id-prints .view-content.owl-carousel .owl-nav .owl-next span {
+  font-size: 70px;
+  padding: 10px;
+  margin-top: -40px;
+  display: inline-block;
+}
+.view-id-map .view-content.owl-carousel .owl-nav .owl-next, .view-id-groups .view-content.owl-carousel .owl-nav .owl-next, .view-id-prints .view-content.owl-carousel .owl-nav .owl-next {
+  left: initial;
+  right: 0;
+}
+.view-id-map .view-empty, .view-id-groups .view-empty, .view-id-prints .view-empty {
+  width: 100%;
+  padding: 20px 10%;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+}
+.view-id-map .pager, .view-id-groups .pager, .view-id-prints .pager {
+  margin: 0;
+}
+.view-id-map .pager__item, .view-id-groups .pager__item, .view-id-prints .pager__item {
+  display: none;
+}
+
+body.path-prints .page-content,
+body.path-map .page-content,
+body.path-frontpage .page-content,
+body.path-groups .page-content {
+  margin: 0;
+}
+
+.view-id-news {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 960px;
+  padding: 30px 0;
+}
+.view-id-news .view-content .views-row {
+  width: 100%;
+  border: 1px solid #f5f5f5;
+  padding: 20px;
+  background-color: #EEE;
+  position: relative;
+}
+.view-id-news .view-content .views-row .views-field-label {
+  padding-bottom: 30px;
+}
+.view-id-news .view-content .views-row .wrapper-news {
+  overflow: hidden;
+}
+.view-id-news .view-content .views-row .wrapper-news div {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+}
+.view-id-news .view-content .views-row .wrapper-news div img {
+  width: 100%;
+  height: auto;
+}
+.view-id-news .view-content .views-row .wrapper-news div + div {
+  margin-right: 0;
+  width: 75%;
+}
+.view-id-news .view-content .views-row .wrapper-news div + div time {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+.view-id-news .view-content .views-row .wrapper-news div + div .title-news {
+  clear: both;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.view-id-news .view-content .views-row .wrapper-news div + div .body-news {
+  clear: both;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@media all and (max-width: 768px) {
+  .view-id-news .view-content .views-row .wrapper-news div {
+    float: left;
+    width: 100%;
+    margin-right: 0%;
+  }
+  .view-id-news .view-content .views-row .wrapper-news div + div {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.view-id-messages .view-content .views-row {
+  margin-bottom: 20px;
+}
+.view-id-messages .view-content .views-row .private-message-thread-inbox {
+  border: 1px solid #f5f5f5;
+  padding: 15px;
+}
+.view-id-messages .view-content .views-row .private-message-thread-inbox:hover {
+  background-color: #f5f5f5;
+}
+.view-id-messages .view-content .views-row .private-message-thread-inbox .message-link {
+  display: block;
+  color: #222;
+  text-decoration: none;
+}
+.view-id-messages .view-content .views-row .private-message-thread-inbox .private-message-recipients {
+  max-width: 60px;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.view-id-messages .view-content .views-row .private-message-thread-inbox .private-message-inbox {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.view-id-messages .view-content .views-row .private-message-thread-inbox .private-message-inbox .field--name-owner {
+  display: none;
+}
+.view-id-messages .view-content .views-row .private-message-thread-inbox .private-message-inbox .field--type-created {
+  font-size: 0.9em;
+}
+.facets-widget-checkbox h3 {
+  font-size: 1em;
+}
+.facets-widget-checkbox ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.facets-widget-checkbox ul li {
+  position: relative;
+}
+.facets-widget-checkbox ul li input {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 8px 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.facets-widget-checkbox ul li label {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 15px 0 25px;
+}
+.facets-widget-checkbox ul li label .facet-item__count {
+  font-size: 0.8em;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 999;
+  left: -280px;
+  top: 0;
+  width: 280px;
+  height: 100%;
+  padding: 0;
+  background: #f5f5f5;
+  transition: all 0.2s ease-out;
+}
+.sidebar .block {
+  padding: 10px 20px;
+}
+.sidebar .sidebar-btn {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 280px;
+  z-index: 11;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.sidebar .sidebar-btn:hover {
+  opacity: 0.9;
+}
+.sidebar .sidebar-btn div {
+  font-size: 2em;
+  line-height: 80px;
+  font-weight: 300;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  background: transparent;
+  border-style: solid;
+  border-width: 80px 0 0 80px;
+  border-color: transparent transparent transparent #4e5f70;
+}
+.sidebar .sidebar-btn div:before {
+  content: "";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 1.3em;
+  color: #fff;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 1.3rem;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+.sidebar .sidebar-btn div:before {
+  position: absolute;
+  display: inline-block;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+.sidebar.active {
+  left: 0;
+  -o-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+.sidebar.active .sidebar-btn div:before {
+  content: "";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 1.3em;
+  color: #fff;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 1.3rem;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+.sidebar.active .sidebar-btn div:before {
+  position: absolute;
+  display: inline-block;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+.sidebar.right {
+  right: -280px;
+  left: initial;
+}
+.sidebar.right .sidebar-btn {
+  top: 0;
+  bottom: initial;
+  right: 280px;
+  left: initial;
+}
+.sidebar.right .sidebar-btn div {
+  border-style: solid;
+  border-width: 0 80px 80px 0;
+  border-color: transparent #4e5f70 transparent transparent;
+}
+.sidebar.right .sidebar-btn div:before {
+  content: "";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 1.3em;
+  color: #fff;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 1.3rem;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+.sidebar.right .sidebar-btn div:before {
+  position: absolute;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  top: 10px;
+  bottom: initial;
+  right: 10px;
+  left: initial;
+}
+.sidebar.right.active {
+  right: 0;
+  left: initial;
+}
+.sidebar.right.active .sidebar-btn div:before {
+  content: "";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 1.3em;
+  color: #fff;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 1.3rem;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+.sidebar.right.active .sidebar-btn div:before {
+  position: absolute;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  top: 10px;
+  bottom: initial;
+  right: 10px;
+  left: initial;
+}
+.sidebar .sidebar-content {
+  overflow-y: auto;
+  height: 100%;
+}
+.sidebar .sidebar-content a.button {
+  display: block;
+}
+
+.block-language {
+  text-align: center;
+}
+.block-language ul.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.block-language ul.links li {
+  display: inline-block;
+}
+.block-language ul.links li:last-child {
+  padding: 0;
+}
+.block-language ul.links li a {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 13px 24px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid #b8b8b8;
+  margin-left: 0;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  padding: 13px 24px;
+  background-color: #7cbc48;
+  border-color: #7cbc48;
+  color: #fff;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  padding: 6px 10px;
+}
+.block-language ul.links li a:hover, .block-language ul.links li a:focus, .block-language ul.links li a.is-active {
+  background-color: white;
+  border-color: #0678be;
+  color: #0678be;
+  text-decoration: none;
+  outline: transparent;
+}
+.block-language ul.links li a:hover, .block-language ul.links li a:focus, .block-language ul.links li a.is-active {
+  background-color: #6aab35;
+  border-color: #6aab35;
+  color: #fff;
+}
+
+.sidebar .block-menu {
+  text-align: center;
+}
+.sidebar .block-menu ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0;
+}
+.sidebar .block-menu ul.menu li {
+  padding: 10px 0;
+  display: block;
+}
+.sidebar .block-menu ul.menu li a {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 13px 24px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid #b8b8b8;
+  margin-left: 0;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.sidebar .block-menu ul.menu li a:hover, .sidebar .block-menu ul.menu li a:focus, .sidebar .block-menu ul.menu li a.is-active {
+  background-color: white;
+  border-color: #0678be;
+  color: #0678be;
+  text-decoration: none;
+  outline: transparent;
+}
+.sidebar .block-menu.menu--footer {
+  opacity: 0.8;
+}
+.sidebar .block-menu.menu--footer li a {
+  font-size: 0.75em !important;
+}
+
+.block-menu.menu--map-menu {
+  position: absolute;
+  z-index: 700;
+  top: 100%;
+  right: 15px;
+  margin-top: 10px;
+}
+.block-menu.menu--map-menu ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.block-menu.menu--map-menu ul.menu li {
+  padding: 5px 0;
+  display: block;
+}
+.block-menu.menu--map-menu ul.menu li a {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 13px 24px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid #b8b8b8;
+  margin-left: 0;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  padding: 10px;
+  min-width: initial;
+  font-size: 0;
+}
+.block-menu.menu--map-menu ul.menu li a:hover, .block-menu.menu--map-menu ul.menu li a:focus, .block-menu.menu--map-menu ul.menu li a.is-active {
+  background-color: white;
+  border-color: #0678be;
+  color: #0678be;
+  text-decoration: none;
+  outline: transparent;
+}
+.block-menu.menu--map-menu ul.menu li a:before {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.block-menu.menu--map-menu ul.menu li a:before {
+  content: "";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 1.3em;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 1.3rem;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+.block-menu.menu--map-menu ul.menu li:first-child a {
+  font-size: 0;
+}
+.block-menu.menu--map-menu ul.menu li:first-child a:before {
+  content: "";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 1.3em;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 1.3rem;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+.block-menu.menu--map-menu ul.menu li:last-child a {
+  font-size: 0;
+}
+.block-menu.menu--map-menu ul.menu li:last-child a:before {
+  content: "";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 1.3em;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 1.3rem;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+@media only screen and (min-width: 768px) {
+  .block-menu.menu--map-menu ul.menu li a {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 13px 24px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid #b8b8b8;
+    margin-left: 0;
+    min-width: 100px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    position: relative;
+    padding-left: 2.5em;
+    padding-left: 50px !important;
+  }
+  .block-menu.menu--map-menu ul.menu li a:hover, .block-menu.menu--map-menu ul.menu li a:focus, .block-menu.menu--map-menu ul.menu li a.is-active {
+    background-color: white;
+    border-color: #0678be;
+    color: #0678be;
+    text-decoration: none;
+    outline: transparent;
+  }
+  .block-menu.menu--map-menu ul.menu li a:before {
+    content: "";
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    padding-right: 1.3em;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: 0.2em;
+    /* you can be more comfortable with increased icons size */
+    font-size: 1.3rem;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+  }
+  .block-menu.menu--map-menu ul.menu li a:before {
+    position: absolute;
+    left: 0.7em;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+  .block-menu.menu--map-menu ul.menu li a:before {
+    font-size: 2em !important;
+  }
+  .block-menu.menu--map-menu ul.menu li:first-child a {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 13px 24px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid #b8b8b8;
+    margin-left: 0;
+    min-width: 100px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    position: relative;
+    padding-left: 2.5em;
+  }
+  .block-menu.menu--map-menu ul.menu li:first-child a:hover, .block-menu.menu--map-menu ul.menu li:first-child a:focus, .block-menu.menu--map-menu ul.menu li:first-child a.is-active {
+    background-color: white;
+    border-color: #0678be;
+    color: #0678be;
+    text-decoration: none;
+    outline: transparent;
+  }
+  .block-menu.menu--map-menu ul.menu li:first-child a:before {
+    content: "";
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    padding-right: 1.3em;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: 0.2em;
+    /* you can be more comfortable with increased icons size */
+    font-size: 1.3rem;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+  }
+  .block-menu.menu--map-menu ul.menu li:first-child a:before {
+    position: absolute;
+    left: 0.7em;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+  .block-menu.menu--map-menu ul.menu li:last-child a {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 13px 24px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid #b8b8b8;
+    margin-left: 0;
+    min-width: 100px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    position: relative;
+    padding-left: 2.5em;
+  }
+  .block-menu.menu--map-menu ul.menu li:last-child a:hover, .block-menu.menu--map-menu ul.menu li:last-child a:focus, .block-menu.menu--map-menu ul.menu li:last-child a.is-active {
+    background-color: white;
+    border-color: #0678be;
+    color: #0678be;
+    text-decoration: none;
+    outline: transparent;
+  }
+  .block-menu.menu--map-menu ul.menu li:last-child a:before {
+    content: "";
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    padding-right: 1.3em;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: 0.2em;
+    /* you can be more comfortable with increased icons size */
+    font-size: 1.3rem;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+  }
+  .block-menu.menu--map-menu ul.menu li:last-child a:before {
+    position: absolute;
+    left: 0.7em;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+}
+
+#private-message-page .private-message-thread-messages {
+  background-color: #f5f5f5;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 535px;
+}
+#private-message-page .private-message-thread-messages::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+#private-message-page .private-message-thread-messages .load-previous-position-before {
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+#private-message-page .private-message-thread-messages .load-previous-position-before a {
+  display: inline-block;
+}
+#private-message-page .private-message-thread-messages .private-message {
+  position: relative;
+  padding: 0 0 15px 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#private-message-page .private-message-thread-messages .private-message .contextual-region {
+  position: initial;
+}
+#private-message-page .private-message-thread-messages .private-message .field--type-created {
+  position: absolute;
+  bottom: 2px;
+  font-size: 8px;
+}
+#private-message-page .private-message-thread-messages .private-message .field--type-text-long {
+  display: inline-block;
+  max-width: 80%;
+  padding: 5px 10px;
+  background-color: #6455ab;
+  color: #fff;
+}
+#private-message-page .private-message-thread-messages .private-message .field--name-owner {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+#private-message-page .private-message-thread-messages .private-message.private-message-author-other .field--name-owner {
+  left: 0;
+}
+#private-message-page .private-message-thread-messages .private-message.private-message-author-other .field--type-created {
+  left: 50px;
+}
+#private-message-page .private-message-thread-messages .private-message.private-message-author-other .field--type-text-long {
+  border-radius: 15px 15px 15px 0;
+  float: left;
+  margin-left: 50px;
+}
+#private-message-page .private-message-thread-messages .private-message.private-message-author-self .field--name-owner {
+  right: 0;
+}
+#private-message-page .private-message-thread-messages .private-message.private-message-author-self .field--type-created {
+  right: 50px;
+}
+#private-message-page .private-message-thread-messages .private-message.private-message-author-self .field--type-text-long {
+  border-radius: 15px 15px 0 15px;
+  float: right;
+  margin-right: 50px;
+}
+#private-message-page .private-message-form label {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

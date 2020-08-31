@@ -1,0 +1,77 @@
+uuid: b95a536e-b086-4863-9366-bc731205d874
+langcode: en
+status: true
+dependencies:
+  module:
+    - elasticsearch_connector
+id: elasticsearch_index--elasticsearch_index
+disabled: true
+path: elasticsearch_index/elasticsearch_index
+resourceType: elasticsearch_index--elasticsearch_index
+resourceFields:
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  dependencies:
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+    disabled: false
+  third_party_settings:
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false
+  index_id:
+    fieldName: index_id
+    publicName: index_id
+    enhancer:
+      id: ''
+    disabled: false
+  name:
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+    disabled: false
+  num_of_shards:
+    fieldName: num_of_shards
+    publicName: num_of_shards
+    enhancer:
+      id: ''
+    disabled: false
+  num_of_replica:
+    fieldName: num_of_replica
+    publicName: num_of_replica
+    enhancer:
+      id: ''
+    disabled: false
+  server:
+    fieldName: server
+    publicName: server
+    enhancer:
+      id: ''
+    disabled: false

@@ -1,0 +1,161 @@
+uuid: 0eec2ce9-f670-4fe9-8f83-f28114382742
+langcode: en
+status: true
+dependencies:
+  module:
+    - facets
+id: facets_facet--facets_facet
+disabled: true
+path: facets_facet/facets_facet
+resourceType: facets_facet--facets_facet
+resourceFields:
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  dependencies:
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+    disabled: false
+  third_party_settings:
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  name:
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+    disabled: false
+  url_alias:
+    fieldName: url_alias
+    publicName: url_alias
+    enhancer:
+      id: ''
+    disabled: false
+  weight:
+    fieldName: weight
+    publicName: weight
+    enhancer:
+      id: ''
+    disabled: false
+  min_count:
+    fieldName: min_count
+    publicName: min_count
+    enhancer:
+      id: ''
+    disabled: false
+  show_only_one_result:
+    fieldName: show_only_one_result
+    publicName: show_only_one_result
+    enhancer:
+      id: ''
+    disabled: false
+  field_identifier:
+    fieldName: field_identifier
+    publicName: field_identifier
+    enhancer:
+      id: ''
+    disabled: false
+  facet_source_id:
+    fieldName: facet_source_id
+    publicName: facet_source_id
+    enhancer:
+      id: ''
+    disabled: false
+  widget:
+    fieldName: widget
+    publicName: widget
+    enhancer:
+      id: ''
+    disabled: false
+  query_operator:
+    fieldName: query_operator
+    publicName: query_operator
+    enhancer:
+      id: ''
+    disabled: false
+  use_hierarchy:
+    fieldName: use_hierarchy
+    publicName: use_hierarchy
+    enhancer:
+      id: ''
+    disabled: false
+  expand_hierarchy:
+    fieldName: expand_hierarchy
+    publicName: expand_hierarchy
+    enhancer:
+      id: ''
+    disabled: false
+  enable_parent_when_child_gets_disabled:
+    fieldName: enable_parent_when_child_gets_disabled
+    publicName: enable_parent_when_child_gets_disabled
+    enhancer:
+      id: ''
+    disabled: false
+  hard_limit:
+    fieldName: hard_limit
+    publicName: hard_limit
+    enhancer:
+      id: ''
+    disabled: false
+  exclude:
+    fieldName: exclude
+    publicName: exclude
+    enhancer:
+      id: ''
+    disabled: false
+  only_visible_when_facet_source_is_visible:
+    fieldName: only_visible_when_facet_source_is_visible
+    publicName: only_visible_when_facet_source_is_visible
+    enhancer:
+      id: ''
+    disabled: false
+  processor_configs:
+    fieldName: processor_configs
+    publicName: processor_configs
+    enhancer:
+      id: ''
+    disabled: false
+  empty_behavior:
+    fieldName: empty_behavior
+    publicName: empty_behavior
+    enhancer:
+      id: ''
+    disabled: false
+  show_title:
+    fieldName: show_title
+    publicName: show_title
+    enhancer:
+      id: ''
+    disabled: false

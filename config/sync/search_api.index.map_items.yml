@@ -1,0 +1,64 @@
+uuid: b24c5380-f896-4c90-b055-fe3315214cea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - search_api
+    - search_api_geolocation
+  config:
+    - field.storage.node.field_communication_channel
+    - field.storage.node.field_geolocation
+    - search_api.server.elasticsearch_server
+id: map_items
+name: 'Map Items'
+description: ''
+read_only: false
+field_settings:
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_communication_channel:
+    label: 'Communication channel'
+    datasource_id: 'entity:node'
+    property_path: field_communication_channel
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_communication_channel
+  geolocation:
+    label: Location
+    datasource_id: 'entity:node'
+    property_path: field_geolocation
+    type: geo_point
+    dependencies:
+      config:
+        - field.storage.node.field_geolocation
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - group
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  search_api_geolocation: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: elasticsearch_server

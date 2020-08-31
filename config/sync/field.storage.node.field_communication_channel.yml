@@ -1,0 +1,33 @@
+uuid: c0a92504-3b0a-4422-b28c-008f50071ce1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_communication_channel
+field_name: field_communication_channel
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: telegram
+      label: Telegram
+    -
+      value: facebook
+      label: Facebook
+    -
+      value: whatsapp
+      label: Whatsapp
+    -
+      value: others
+      label: Others
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 73fe7d0f-7d08-4fbb-a187-30839036687a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: prints
+label: Prints
+type: 'canonical_entities:node'
+pattern: '3dprints/[node:nid]'
+selection_criteria:
+  4075d1c6-5ae0-4f59-a2dd-5396446e8033:
+    id: node_type
+    bundles:
+      prints: prints
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4075d1c6-5ae0-4f59-a2dd-5396446e8033
+selection_logic: and
+weight: -5
+relationships: {  }

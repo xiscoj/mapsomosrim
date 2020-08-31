@@ -1,0 +1,77 @@
+uuid: b88f5180-ac21-482a-bd7c-c69ead3a76a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - facets
+id: facets_facet_source--facets_facet_source
+disabled: true
+path: facets_facet_source/facets_facet_source
+resourceType: facets_facet_source--facets_facet_source
+resourceFields:
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  dependencies:
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+    disabled: false
+  third_party_settings:
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  name:
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+    disabled: false
+  filter_key:
+    fieldName: filter_key
+    publicName: filter_key
+    enhancer:
+      id: ''
+    disabled: false
+  url_processor:
+    fieldName: url_processor
+    publicName: url_processor
+    enhancer:
+      id: ''
+    disabled: false
+  breadcrumb:
+    fieldName: breadcrumb
+    publicName: breadcrumb
+    enhancer:
+      id: ''
+    disabled: false

@@ -1,0 +1,26 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+
+login-page:
+  version: VERSION
+  css:
+    theme:
+      css/login-page.css: {}
+  dependencies:
+    - mediteran/maintenance-page
+
+search-map-results-sidebar:
+  js:
+    js/search-map-results-sidebar.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+
+toggle-search-filters:
+  js:
+    js/toggle-search-filters.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
