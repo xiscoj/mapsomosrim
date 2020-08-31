@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://coronavirus3dprint.com'
+origin: 'https://map.somosrim.org'
 origin_dir: sites/default/files
 use_imagecache_root: true
 verify: true
