@@ -1294,6 +1294,25 @@ body.path-groups .page-content {
   }
 }
 
+.block-system-branding-block {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.block-system-branding-block .site-logo {
+  display: block;
+  max-width: 150px;
+}
+.block-system-branding-block .site-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.block-page-title-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 #private-message-page .private-message-thread-messages {
   background-color: #f5f5f5;
   padding: 15px;

@@ -5,6 +5,7 @@ base theme: mediteran
 name: 'Map'
 description: 'Subtheme from Mediteran theme'
 package: 'Mediteran'
+logo: 'logo.png'
 
 regions:
   header: 'Header'

@@ -1,0 +1,13 @@
+.block-system-branding-block{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  .site-logo{
+    display: block;
+    max-width: 150px;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
