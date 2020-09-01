@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.groups
+    - search_api.index.map_items
   module:
     - search_api
     - user
@@ -89,7 +89,7 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-      title: 'Map of the #Maker #Community - health material for the #COVID19 crisis'
+      title: 'Observatory of the International Maker Network'
       header: {  }
       footer: {  }
       empty:

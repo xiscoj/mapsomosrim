@@ -11,7 +11,7 @@ _core:
 id: map_primary_local_tasks
 theme: map
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:
